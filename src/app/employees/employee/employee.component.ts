@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from 'src/app/shared/employee.service';
+import { DepartmentService } from 'src/app/shared/department.service';
 
 @Component({
   selector: 'app-employee',
@@ -8,7 +9,8 @@ import { EmployeeService } from 'src/app/shared/employee.service';
 })
 export class EmployeeComponent implements OnInit {
 
-  constructor(private service: EmployeeService) { }
+  constructor(private service: EmployeeService,
+              private departmentService: DepartmentService ) { }
 
   departments = [
     {id: 1, value: 'HR'},
