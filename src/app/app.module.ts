@@ -13,6 +13,7 @@ import { EmployeeComponent } from './employees/employee/employee.component';
 import { EmployeeService } from './shared/employee.service';
 import { environment } from '../environments/environment';
 import { DepartmentService } from './shared/department.service';
+import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
 
 
 
@@ -20,7 +21,8 @@ import { DepartmentService } from './shared/department.service';
   declarations: [
     AppComponent,
     EmployeesComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,
