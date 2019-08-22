@@ -14,7 +14,7 @@ import { EmployeeService } from './shared/employee.service';
 import { environment } from '../environments/environment';
 import { DepartmentService } from './shared/department.service';
 import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
-
+import { DatePipe } from '@angular/common';
 
 
 @NgModule({
@@ -33,7 +33,8 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
     AngularFireModule.initializeApp(environment.firebaseConfig),
     FormsModule
   ],
-  providers: [EmployeeService, DepartmentService],
-  bootstrap: [AppComponent]
+  providers: [EmployeeService, DepartmentService, DatePipe],
+  bootstrap: [AppComponent],
+  entryComponents: [EmployeeComponent]
 })
 export class AppModule { }
